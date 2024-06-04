@@ -16,6 +16,7 @@ export default defineConfig({
         "src/setupTest.ts",
         "src/components/App/",
       ],
+      reporter: "lcov",
     },
   },
 });
