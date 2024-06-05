@@ -4,7 +4,9 @@ import { mocksCharacters } from "./characters";
 
 const handlers = [
   http.get(`${import.meta.env.VITE_API_URL}/characters`, () => {
-    return HttpResponse.json<Character[]>(mocksCharacters);
+    return HttpResponse.json<{ characters: Character[] }>({
+      characters: mocksCharacters,
+    });
   }),
 ];
 
