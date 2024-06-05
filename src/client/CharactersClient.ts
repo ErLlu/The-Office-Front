@@ -7,13 +7,16 @@ class CharactersClient implements CharacterClientStructure {
       const response = await fetch(
         `${import.meta.env.VITE_API_URL}/characters`,
       );
-      const { characters } = (await response.json()) as {
-        characters: Character[];
-      };
 
-      return characters;
+      if (!response.ok) {
+        throw new Error("Request failed! Code: " + response.status);
+      }
+
+      return (await response.json()) as Character[];
     } catch (error) {
-      throw new Error("Server failed");
+      throw new Error(
+        "Unsuccessful to get Characters: " + (error as Error).message,
+      );
     }
   }
 }
