@@ -14,7 +14,7 @@ export default defineConfig({
       exclude: [
         "src/**/**/main.tsx",
         "src/setupTest.ts",
-        "src/components/App/",
+        "src/components/App/App.tsx",
       ],
       reporter: "lcov",
     },
