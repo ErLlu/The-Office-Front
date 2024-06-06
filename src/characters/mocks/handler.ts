@@ -1,5 +1,5 @@
 import { http, HttpResponse } from "msw";
-import { Character } from "../characters/types";
+import { Character } from "../types";
 import { mocksCharacters } from "./characters";
 
 const handlers = [

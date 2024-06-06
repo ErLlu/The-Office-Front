@@ -1,4 +1,4 @@
-import { Character } from "../characters/types";
+import { Character } from "../types";
 
 export interface CharacterClientStructure {
   getAll(): Promise<Character[]>;

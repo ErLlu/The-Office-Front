@@ -1,4 +1,4 @@
-import { Character } from "../characters/types";
+import { Character } from "../types";
 import { CharacterClientStructure } from "./type";
 
 class CharactersClient implements CharacterClientStructure {
