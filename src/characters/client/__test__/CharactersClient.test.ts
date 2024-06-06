@@ -1,8 +1,8 @@
 import { HttpResponse, http } from "msw";
-import { Character } from "../../characters/types";
-import { mocksCharacters } from "../../mocks/characters";
 import { server } from "../../mocks/node";
-import CharactersClient from "../CharactersClient";
+import CharactersClient from "../CharactersClient.js";
+import { mocksCharacters } from "../../mocks/characters.js";
+import { Character } from "../../types.js";
 
 const client = new CharactersClient();
 
