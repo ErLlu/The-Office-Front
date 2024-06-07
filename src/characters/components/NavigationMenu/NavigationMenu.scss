@@ -1,0 +1,13 @@
+.navigation-menu * {
+  display: flex;
+  gap: 13px;
+}
+
+.link {
+  padding: 2px 5px;
+
+  &:hover {
+    background-color: #736da063;
+    border-radius: 5px;
+  }
+}

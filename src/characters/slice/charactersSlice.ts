@@ -21,5 +21,7 @@ export default charactersSlice;
 
 export const loadCharactersAction = charactersSlice.actions;
 
+export const charactersReducer = charactersSlice.reducer;
+
 export const { loadCharacters: loadCharactersActionCreator } =
   charactersSlice.actions;

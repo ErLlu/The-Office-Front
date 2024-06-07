@@ -1,7 +1,7 @@
 import { Character } from "../types";
-import { CharacterClientStructure } from "./type";
+import { CharactersClientStructure } from "./type";
 
-class CharactersClient implements CharacterClientStructure {
+class CharactersClient implements CharactersClientStructure {
   async getAll(): Promise<Character[]> {
     try {
       const response = await fetch(
