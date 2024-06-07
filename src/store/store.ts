@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { charactersReducer } from "../characters/slice/charactersSlice";
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    characters: charactersReducer,
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;

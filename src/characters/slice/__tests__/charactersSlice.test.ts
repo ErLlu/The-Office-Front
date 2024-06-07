@@ -1,5 +1,6 @@
 import { mocksCharacters } from "../../mocks/characters";
-import charactersSlice, {
+import {
+  charactersReducer,
   loadCharactersActionCreator,
 } from "../charactersSlice";
 import { CharactersState } from "../types";
@@ -14,7 +15,6 @@ describe("Given an Characters reducer", () => {
 
       const action = loadCharactersActionCreator(mocksCharacters);
 
-      const charactersReducer = charactersSlice.reducer;
       const newState = charactersReducer(state, action);
 
       expect(newState).toEqual(expectedNewState);

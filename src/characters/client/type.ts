@@ -1,5 +1,5 @@
 import { Character } from "../types";
 
-export interface CharacterClientStructure {
+export interface CharactersClientStructure {
   getAll(): Promise<Character[]>;
 }

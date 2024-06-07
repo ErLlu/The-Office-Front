@@ -9,17 +9,17 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prepare": "husky",
-    "test:dev": "vitest",
-    "test": "vitest run",
+    "test": "vitest",
     "test:coverage": "vitest --coverage"
   },
   "dependencies": {
-    "@types/react-redux": "^7.1.33",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
     "sass": "^1.77.2"
   },
   "devDependencies": {
+    "@types/react-redux": "^7.1.33",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@reduxjs/toolkit": "^2.2.5",
