@@ -1,0 +1,13 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}

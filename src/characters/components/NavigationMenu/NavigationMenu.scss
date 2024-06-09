@@ -1,13 +1,14 @@
 .navigation-menu * {
   display: flex;
   gap: 13px;
+  color: #142f38;
 }
 
 .link {
   padding: 2px 5px;
 
   &:hover {
-    background-color: #736da063;
+    color: #6b679c;
     border-radius: 5px;
   }
 }
