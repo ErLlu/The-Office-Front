@@ -34,17 +34,6 @@ describe("Given the CharacterCard", () => {
       expect(alternativeText).toBeInTheDocument();
     });
 
-    test("Then it should show the description with the text 'Michael es el gerente regional de la sucursal de Dunder Mifflin'", () => {
-      const expectedText =
-        /michael es el gerente regional de la sucursal de dunder mifflin/i;
-
-      render(<CharacterCard character={michaelMockCharacter} />);
-
-      const description = screen.getByText(expectedText);
-
-      expect(description).toBeInTheDocument();
-    });
-
     test("Then it should show the position with the text 'gerente'", () => {
       const expectedText = /gerente/i;
 

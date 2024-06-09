@@ -12,7 +12,11 @@ class CharactersClient implements CharactersClientStructure {
         throw new Error("Request failed! Code: " + response.status);
       }
 
-      return (await response.json()) as Character[];
+      const { characters } = (await response.json()) as {
+        characters: Character[];
+      };
+
+      return characters;
     } catch (error) {
       throw new Error(
         "Unsuccessful to get Characters: " + (error as Error).message,

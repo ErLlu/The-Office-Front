@@ -4,7 +4,7 @@ export interface Character {
   position: string;
   age: number;
   isWorking: boolean;
-  imageUrl: string;
+  urlImage: string;
   alternativeText: string;
   description: string;
   seasons: string;
