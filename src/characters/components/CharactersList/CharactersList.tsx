@@ -1,5 +1,5 @@
 import { Character } from "../../types";
-import CharacterCard from "../CharacterCard/CharacterCard";
+import CharacterCard from "../CharacterCard/CharacterCard.js";
 
 interface CharactersListProps {
   characters: Character[];
