@@ -5,7 +5,7 @@ export const michaelMockCharacter: Character = {
   name: "Michael",
   age: 54,
   isWorking: false,
-  position: "",
+  position: "gerente",
   imageUrl:
     "https://en.wikipedia.org/wiki/Michael_Scott_%28The_Office%29#/media/File:MichaelScott.png",
   alternativeText: "Imagen de Michael Scott en su mesa",
