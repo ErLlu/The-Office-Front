@@ -14,7 +14,7 @@ const CharacterCard = ({
       <div className="character__image">
         <img
           className="character__image"
-          src={character.imageUrl}
+          src={character.urlImage}
           alt={character.alternativeText}
           width="150"
           height="150"
@@ -25,7 +25,6 @@ const CharacterCard = ({
       <div className="character__status">
         {character.isWorking ? "Está trabajando" : "No está trabajando"}
       </div>
-      <p className="character__description">{character.description}</p>
     </article>
   );
 };

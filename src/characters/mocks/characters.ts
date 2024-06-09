@@ -6,7 +6,7 @@ export const michaelMockCharacter: Character = {
   age: 54,
   isWorking: false,
   position: "gerente",
-  imageUrl:
+  urlImage:
     "https://en.wikipedia.org/wiki/Michael_Scott_%28The_Office%29#/media/File:MichaelScott.png",
   alternativeText: "Imagen de Michael Scott en su mesa",
   seasons: "1-7",
@@ -20,7 +20,7 @@ export const dwightMockCharacter: Character = {
   age: 35,
   isWorking: true,
   position: "",
-  imageUrl:
+  urlImage:
     "https://en.wikipedia.org/wiki/Dwight_Schrute#/media/File:Dwight_Schrute.jpg",
   alternativeText: "Imagen de Dwight Schrute sorniendo a cámara",
   seasons: "1-9",

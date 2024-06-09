@@ -9,9 +9,7 @@ const client = new CharactersClient();
 describe("Given a CharactersClient getCharacter method", () => {
   describe("When its called the API and responds with character list containing Michael Scott's and Dwight Schrute characters", () => {
     test("Then it should return a list with Michael Scott's and Dwight Schrute character", async () => {
-      const expectedMocksCharacters: { characters: Character[] } = {
-        characters: mocksCharacters,
-      };
+      const expectedMocksCharacters: Character[] = mocksCharacters;
 
       const characters = await client.getAll();
 
