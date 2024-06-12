@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import NavigationMenu from "../NavigationMenu";
 import { Provider } from "react-redux";
-import store from "../../../../store/store";
+import store from "../../../store/store";
 
 describe("Given the NavigationMenu component", () => {
   describe("When rendered", () => {

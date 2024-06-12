@@ -1,5 +1,6 @@
 import { Character } from "../../types";
 import CharacterCard from "../CharacterCard/CharacterCard.js";
+import "./CharactersList.scss";
 
 interface CharactersListProps {
   characters: Character[];

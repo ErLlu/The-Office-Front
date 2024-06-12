@@ -12,6 +12,9 @@ body {
 
 ul,
 li {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -19,5 +22,9 @@ li {
 
 h1,
 h2 {
+  margin: 0;
+}
+
+a {
   margin: 0;
 }

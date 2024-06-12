@@ -4,7 +4,7 @@ import {
   Navigate,
   Route,
 } from "react-router-dom";
-import App from "../characters/components/App/App";
+import App from "../components/App/App";
 import HomePage from "../pages/HomePage";
 
 const mainRouter = createBrowserRouter(
