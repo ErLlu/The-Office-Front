@@ -1,4 +1,5 @@
 import { Character } from "../../types";
+import Button from "../Button/Button";
 
 interface CharacterCardProps {
   character: Character;
@@ -24,6 +25,16 @@ const CharacterCard = ({
       <div className="character__seasons">{character.seasons}</div>
       <div className="character__status">
         {character.isWorking ? "Está trabajando" : "No está trabajando"}
+      </div>
+      <div>
+        <Button
+          className="button"
+          source="icons/icons8-delete.svg"
+          alternativeText="Botón de borrar"
+          width="20"
+          height="20"
+          action={() => {}}
+        />
       </div>
     </article>
   );
