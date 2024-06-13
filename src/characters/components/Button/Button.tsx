@@ -13,17 +13,16 @@ const Button = ({
   width,
   height,
   className,
-  action,
+  action: handleKeyDown,
 }: Button): React.ReactElement => {
   return (
-    <button className="button">
+    <button className="button" onClick={() => {}} onKeyDown={handleKeyDown}>
       <img
         src={source}
         alt={alternativeText}
         width={width}
         height={height}
         className={className}
-        onClick={action}
       />
     </button>
   );
