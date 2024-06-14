@@ -6,12 +6,12 @@ const NavigationMenu = (): React.ReactElement => {
     <nav className="navigation-menu">
       <ul>
         <li>
-          <NavLink className={"link"} to="/">
+          <NavLink className={"link"} to="/characters">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink className={"link"} to="/">
+          <NavLink className={"link"} to="/create">
             Crear
           </NavLink>
         </li>

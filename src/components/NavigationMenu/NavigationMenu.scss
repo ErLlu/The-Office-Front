@@ -1,14 +1,10 @@
-.navigation-menu * {
+.navigation-menu {
   display: flex;
-  gap: 13px;
+  align-self: self-start;
   color: #142f38;
 }
 
-.link {
-  padding: 2px 5px;
-
-  &:hover {
-    color: #6b679c;
-    border-radius: 5px;
-  }
+.active {
+  text-decoration: underline;
+  color: #3d2249;
 }

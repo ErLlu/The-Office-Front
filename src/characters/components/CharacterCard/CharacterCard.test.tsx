@@ -15,7 +15,7 @@ describe("Given the CharacterCard", () => {
     });
 
     test("Then it should show the age with the number 54", () => {
-      const expectedAge = 54;
+      const expectedAge = /54/i;
 
       render(<CharacterCard character={michaelMockCharacter} />);
 
@@ -54,24 +54,22 @@ describe("Given the CharacterCard", () => {
       expect(seasons).toBeInTheDocument();
     });
 
-    test("Then it should show the working status 'Está trabajando'", () => {
-      const expectedText = /está trabajando/i;
-
+    test("Then it should show the working status 'imagen de una mesa con un check o una x'", () => {
+      const expectedAltText = "imagen de una mesa con un check o una x";
       render(<CharacterCard character={michaelMockCharacter} />);
 
-      const status = screen.getByText(expectedText);
+      const status = screen.getByAltText(expectedAltText);
 
       expect(status).toBeInTheDocument();
     });
 
-    test("Then it should show the working status 'No está trabajando' when isWorking is false", () => {
-      const expectedText = /no está trabajando/i;
-
+    test("Then it should show the working status 'imagen de una mesa con un check o una x' when isWorking is false", () => {
+      const expectedAltText = "imagen de una mesa con un check o una x";
       const nonWorkingCharacter = { ...michaelMockCharacter, isWorking: false };
 
       render(<CharacterCard character={nonWorkingCharacter} />);
 
-      const status = screen.getByText(expectedText);
+      const status = screen.getByAltText(expectedAltText);
 
       expect(status).toBeInTheDocument();
     });

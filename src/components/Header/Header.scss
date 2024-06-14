@@ -1,0 +1,9 @@
+.main-header {
+  width: 100%;
+
+  &__image {
+    width: 100vw;
+    height: 78px;
+    object-fit: cover;
+  }
+}

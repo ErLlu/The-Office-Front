@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "./App.scss";
-import NavigationMenu from "../../../components/NavigationMenu/NavigationMenu";
-import Header from "../../../components/Header/Header";
+import Header from "../Header/Header";
+import NavigationMenu from "../NavigationMenu/NavigationMenu";
 
 const App = () => {
   return (
