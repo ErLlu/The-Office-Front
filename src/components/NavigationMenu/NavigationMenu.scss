@@ -2,6 +2,11 @@
   display: flex;
   align-self: self-start;
   color: #142f38;
+
+  &__links {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .active {
