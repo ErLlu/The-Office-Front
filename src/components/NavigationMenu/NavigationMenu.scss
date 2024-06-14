@@ -2,13 +2,9 @@
   display: flex;
   align-self: self-start;
   color: #142f38;
-  padding: 10px;
 }
 
-.link {
-  &:hover {
-    display: flex;
-    color: #6b679c;
-    border-radius: 5px;
-  }
+.active {
+  text-decoration: underline;
+  color: #3d2249;
 }

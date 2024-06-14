@@ -16,14 +16,8 @@ const Button = ({
   action,
 }: ButtonProps): React.ReactElement => {
   return (
-    <button className="button" onClick={action}>
-      <img
-        src={source}
-        alt={alternativeText}
-        width={width}
-        height={height}
-        className={className}
-      />
+    <button className={`button ${className}`} onClick={action}>
+      <img src={source} alt={alternativeText} width={width} height={height} />
     </button>
   );
 };
