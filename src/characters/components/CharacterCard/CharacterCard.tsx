@@ -43,10 +43,10 @@ const CharacterCard = ({
       <div>
         <Button
           className="button"
-          source="icons/delete.svg"
+          source="icons/brossa.svg"
           alternativeText="Botón de borrar"
-          width="20"
-          height="20"
+          width="30"
+          height="30"
           action={() => {}}
         />
       </div>

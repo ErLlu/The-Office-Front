@@ -2,15 +2,34 @@
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  position: relative;
+
   @media (width < 600px) {
     box-shadow: none;
     padding: 8px;
   }
+
+  &__image {
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  &__infoextra {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-size: 13px;
+  }
 }
 
-.character__image {
-  object-fit: cover;
-}
 .info__container {
   background-color: #3d2249;
   display: flex;
@@ -19,18 +38,9 @@
   padding: 8px;
 }
 
-.character__info {
-  display: flex;
-  flex-direction: column;
-  font-size: 13px;
-  gap: 8px;
-}
-
-.character__infoextra {
-  display: flex;
-  flex-direction: column;
-}
-
-.character__name {
-  font-size: 13px;
+.button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
 }
