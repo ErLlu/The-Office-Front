@@ -1,4 +1,4 @@
-type Button = {
+type ButtonProps = {
   source: string;
   alternativeText: string;
   width: string;
@@ -13,10 +13,10 @@ const Button = ({
   width,
   height,
   className,
-  action: handleKeyDown,
-}: Button): React.ReactElement => {
+  action,
+}: ButtonProps): React.ReactElement => {
   return (
-    <button className="button" onClick={() => {}} onKeyDown={handleKeyDown}>
+    <button className="button" onClick={action}>
       <img
         src={source}
         alt={alternativeText}
