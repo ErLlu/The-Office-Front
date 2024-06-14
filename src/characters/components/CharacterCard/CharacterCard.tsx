@@ -1,5 +1,5 @@
+import Button from "../../../components/Button/Button";
 import { Character } from "../../types";
-import Button from "../Button/Button";
 
 interface CharacterCardProps {
   character: Character;
