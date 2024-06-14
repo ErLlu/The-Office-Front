@@ -4,7 +4,7 @@ import "./NavigationMenu.scss";
 const NavigationMenu = (): React.ReactElement => {
   return (
     <nav className="navigation-menu">
-      <ul>
+      <ul className="navigation-menu__links">
         <li>
           <NavLink className={"link"} to="/characters">
             Home

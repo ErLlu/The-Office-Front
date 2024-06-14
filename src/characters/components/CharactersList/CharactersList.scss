@@ -1,6 +1,8 @@
 .characters {
   display: grid;
   justify-items: center;
+  align-items: stretch;
+  gap: 10px;
 
   @media (width < 420px) {
     grid-template-columns: 1fr;
