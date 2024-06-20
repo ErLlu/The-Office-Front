@@ -42,7 +42,7 @@ const CharacterCard = ({
       </div>
       <div>
         <Button
-          className="button"
+          className="character__button"
           source="icons/brossa.svg"
           alternativeText="Botón de borrar"
           width="30"

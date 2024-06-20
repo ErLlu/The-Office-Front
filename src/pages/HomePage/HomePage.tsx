@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../store/hooks";
-import CharactersClient from "../characters/client/CharactersClient";
-import { loadCharactersActionCreator } from "../characters/slice/charactersSlice";
-import CharactersList from "../characters/components/CharactersList/CharactersList.js";
+import { useAppDispatch, useAppSelector } from "../../store/hooks.js";
+import { loadCharactersActionCreator } from "../../characters/slice/charactersSlice.js";
+import CharactersList from "../../characters/components/CharactersList/CharactersList.js";
+import charactersClient from "../../characters/client/CharactersClient.js";
 
 const HomePage = (): React.ReactElement => {
   const dispatch = useAppDispatch();
@@ -10,8 +10,7 @@ const HomePage = (): React.ReactElement => {
 
   useEffect(() => {
     const fetchCharacters = async () => {
-      const client = new CharactersClient();
-      const characters = await client.getAll();
+      const characters = await charactersClient.getAll();
       const action = loadCharactersActionCreator(characters);
       dispatch(action);
     };

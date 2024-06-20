@@ -1,10 +1,10 @@
 import { HttpResponse, http } from "msw";
 import { server } from "../../mocks/node";
-import CharactersClient from "../CharactersClient.js";
 import { mocksCharacters } from "../../mocks/characters.js";
 import { Character } from "../../types.js";
+import charactersClient from "../CharactersClient.js";
 
-const client = new CharactersClient();
+const client = charactersClient;
 
 describe("Given a CharactersClient getCharacter method", () => {
   describe("When its called the API and responds with character list containing Michael Scott's and Dwight Schrute characters", () => {
