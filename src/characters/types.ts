@@ -9,3 +9,5 @@ export interface Character {
   description: string;
   seasons: string;
 }
+
+export type NewCharacterData = Omit<Character, "_id">;

@@ -28,6 +28,13 @@
   &__name {
     font-size: 13px;
   }
+
+  &__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+  }
 }
 
 .info__container {
@@ -36,11 +43,4 @@
   justify-content: space-between;
   color: #fff;
   padding: 8px;
-}
-
-.button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  border: none;
 }
